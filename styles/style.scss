@@ -136,3 +136,99 @@ a {
     }
 }
 
+.about-us {
+    //border: 1px solid red;
+    @include flex-content(center, center);
+    img {
+        width: 35vw;
+    }
+    .title {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .grid-container {
+        //border: 1px solid darkblue;
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .grid-item {
+            width: 25vw;
+            //border: 1px solid darkcyan;
+            @include flex-content(space-between, center);
+            .item-content {
+               // border: 1px solid red;
+                width: 20vw;
+                height: 30vh;
+                @include flex-content(space-evenly, flex-start);
+                flex-direction: column;
+                .item-title {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                .item-text {
+                    font-size: 1rem;
+                    line-height: 1.8;
+                    font-weight: 400;
+                    color: gray;
+                }
+            }
+            img {
+                width: 5vw;
+                height: 10vh;
+                border: 1px solid hotpink;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+}
+
+footer {
+    margin-top: 5rem;
+    height: 50vh;
+    background-color: #1a1a1a;
+    @include flex-content(space-evenly, center);
+    .footer-item {
+        width: 25vw;
+        height: 35vh;
+        @include flex-content(space-evenly, space-between);
+        flex-direction: column;
+    }
+    .footer-links__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+    .footer-links__text {
+        color: #fff;
+    }
+    .footer-links__icons {
+        cursor: pointer;
+    }
+
+    .footer-nav {
+        @include flex-content(center, center);
+        a {
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        a:hover {
+            border-bottom: 2px solid $green;
+        }
+    }
+
+    .footer-contacts {
+        .contacts-content { 
+            cursor: pointer;
+            @include flex-content(flex-start, center);
+            color: #fff;
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
