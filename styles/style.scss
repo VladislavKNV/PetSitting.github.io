@@ -26,6 +26,9 @@ a {
     @include flex-content(space-around, center);
 }
 .communication {
+    .communication__item {
+        margin-right: 2vw;
+    }
     @include flex-content(space-evenly, center);
     width: 30%;
     border: 1px solid hotpink;
@@ -44,6 +47,9 @@ a {
 .navigation-container {
     @include flex-content(space-evenly, center);
     height: 5em;
+    #menu-icon {
+        display: none;
+    }
     .navbar {
         .navbar_item {
             display: inline-block;
@@ -73,7 +79,7 @@ a {
         font-weight: 900;
         color: #fff;
         width: 60%;
-        margin: 3rem 0;
+        margin: 3vh 0;
         text-align: center;
     }
     .main-btn {
@@ -146,6 +152,7 @@ a {
         font-size: 2rem;
         font-weight: 800;
         margin-bottom: 1rem;
+        margin-top: 3vh;
     }
 
     .grid-container {
@@ -231,4 +238,59 @@ footer {
             }
         }
     }
+}
+
+@media screen and (min-width: 1435px) {
+    .banner {
+         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .banner {
+        height: 40rem;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        height: 30rem;
+        .main-btn {
+         width: 15%;
+         height: 7%;
+        }
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        .banner__title {
+            font-size: 3vh;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .communication {
+        display: none;
+    }
+    .logo-img {
+        width: 30vw;
+    }
+    .navigation-container #menu-icon {
+            display: block;
+        }
+    .navbar {
+        flex-direction: column;
+        display: none;
+        background-image: linear-gradient(to right, #1A87E2, #05B56C);
+        margin-top: 30vh;
+        width: 60%;
+        border-radius: 5%;
+        .navbar_item {
+            margin: -3vh 0;
+            text-align: center;
+        }
+    }
+    
 }

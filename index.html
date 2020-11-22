@@ -11,8 +11,8 @@
     <header>
         <div class="contacts">
             <div class="communication">
-                <div class="communication__phone">+375292523250</div>
-                <div class="communication__email">kononovichVlad@gmail.com</div>
+                <div class="communication__item">+375292523250</div>
+                <div class="communication__item">kononovichVlad@gmail.com</div>
             </div>
             <div class="social-media">
                 <a href="#">
@@ -32,13 +32,12 @@
     </header>
     <div class="navigation-container">
         <div class="logo">
-            <img src="/img/logo.jpg" alt="logo">
+            <img src="/img/logo.jpg" alt="logo" class="logo-img">
         </div>
-        <nav class="navbar">
+        <img src="img/icons8-меню.svg" alt="menu" id="menu-icon">
+        <nav class="navbar" id="navbar">
             <a href="#" class="navbar_item">Home</a>
-            <a href="#" class="navbar_item">About</a>
             <a href="#" class="navbar_item">Veterinarian</a>
-            <a href="#" class="navbar_item">Services</a>
             <a href="#" class="navbar_item">Gallery</a>
             <a href="#" class="navbar_item">Pricing</a>
             <a href="#" class="navbar_item">Blog</a>
@@ -97,7 +96,7 @@
             <div class="title">Why choose us?</div>
             <div class="grid-container">
                 <div class="grid-item">
-                   <img src="" alt="">
+                    <img src="img/icons8-Стетоскоп.png" alt="Стетоскоп">
                    <div class="item-content">
                        <div class="item-title">Care advices</div>
                        <div class="item-text">
@@ -151,12 +150,12 @@
         </div>
         <div class="footer-item footer-nav">
             <div class="nav-title footer-links__title">Quick Links</div>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Works</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#" class="navbar_item">Home</a>
+            <a href="#" class="navbar_item">Veterinarian</a>
+            <a href="#" class="navbar_item">Gallery</a>
+            <a href="#" class="navbar_item">Pricing</a>
+            <a href="#" class="navbar_item">Blog</a>
+            <a href="#" class="navbar_item">Contact</a>
         </div>
         <div class="footer-item footer-contacts">
             <div class="contacts-content">
@@ -173,11 +172,12 @@
             </div>
             <div class="contacts-content">
                 <img src="img/icons8-отправлено-40.png" alt="email-icon">
-                <div class="email">
-                    info@yourdomain.com
+                <div class="email" id="footer-email">
+                    info@1.com
                 </div>
             </div>
         </div>
     </footer>
 </body>
+<script src="scripts/script.js"></script>
 </html>

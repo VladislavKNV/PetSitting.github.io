@@ -39,6 +39,10 @@ a {
   border: 1px solid hotpink;
 }
 
+.communication .communication__item {
+  margin-right: 2vw;
+}
+
 .social-media {
   border: 1px solid navy;
   width: 20%;
@@ -69,6 +73,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 5em;
+}
+
+.navigation-container #menu-icon {
+  display: none;
 }
 
 .navigation-container .navbar .navbar_item {
@@ -113,7 +121,7 @@ a {
   font-weight: 900;
   color: #fff;
   width: 60%;
-  margin: 3rem 0;
+  margin: 3vh 0;
   text-align: center;
 }
 
@@ -224,6 +232,7 @@ a {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  margin-top: 3vh;
 }
 
 .about-us .grid-container {
@@ -370,5 +379,61 @@ footer .footer-contacts .contacts-content {
 
 footer .footer-contacts .contacts-content img {
   margin-right: 1rem;
+}
+
+@media screen and (min-width: 1435px) {
+  .banner {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .banner {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 30rem;
+  }
+  .banner .main-btn {
+    width: 15%;
+    height: 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner__title {
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .communication {
+    display: none;
+  }
+  .logo-img {
+    width: 30vw;
+  }
+  .navigation-container #menu-icon {
+    display: block;
+  }
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(#1A87E2), to(#05B56C));
+    background-image: linear-gradient(to right, #1A87E2, #05B56C);
+    margin-top: 30vh;
+    width: 60%;
+    border-radius: 5%;
+  }
+  .navbar .navbar_item {
+    margin: -3vh 0;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
