@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -379,6 +380,187 @@ footer .footer-contacts .contacts-content {
 
 footer .footer-contacts .contacts-content img {
   margin-right: 1rem;
+}
+
+.veterinarians {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 5%;
+  margin: 3% 0 10% 5%;
+}
+
+.veterinarians .veterinarian-card {
+  padding: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  text-align: center;
+}
+
+.veterinarians .veterinarian-card .staff {
+  width: 17vw;
+  height: 40vh;
+}
+
+.veterinarians .veterinarian-card .veterinarian-name {
+  margin-top: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.veterinarians .veterinarian-card .veterinarian-work {
+  font-weight: bold;
+  color: #06b174;
+  margin: 0.7em;
+}
+
+.veterinarian-card:hover {
+  background-color: #06b174;
+  color: #fff;
+  cursor: pointer;
+}
+
+.veterinarian-card:hover .veterinarian-work {
+  color: #fff;
+}
+
+.pricing h2 {
+  text-align: center;
+  font-size: 3em;
+  margin: 3% 0;
+}
+
+.pricing .pricing-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing .pricing-cards .pricing-card {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pricing .pricing-cards .pricing-card img {
+  width: 25vw;
+}
+
+.pricing .pricing-cards .pricing-card .pricing-name {
+  text-transform: uppercase;
+  color: #06b174;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.pricing .pricing-cards .pricing-card .price .big-number {
+  font-size: 4em;
+}
+
+.pricing .pricing-cards .pricing-card ul li {
+  list-style-image: url("../img/icons8-галочка.svg");
+  margin-bottom: 20%;
+  height: 5vh;
+  width: 20vw;
+}
+
+.pricing .pricing-cards .pricing-card ul li:nth-child(2n) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.pricing .pricing-cards .pricing-card .pricing-btn {
+  width: 10vw;
+  height: 8vh;
+  background-color: #06b174;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.all-form {
+  width: 94%;
+  height: 70vh;
+  margin: 3%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1A87E2), to(#05B56C));
+  background-image: linear-gradient(to right, #1A87E2, #05B56C);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all-form img {
+  height: 70vh;
+}
+
+.all-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 5vw;
+}
+
+.all-form form h2 {
+  color: #fff;
+  font-size: 2em;
+}
+
+.all-form form select, .all-form form input, .all-form form textarea {
+  border: 0;
+  outline: 0;
+  border-radius: 0.5em;
+}
+
+.all-form form select, .all-form form input {
+  height: 5vh;
+}
+
+.all-form form .form-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  height: 5vh;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1435px) {

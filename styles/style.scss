@@ -240,6 +240,141 @@ footer {
     }
 }
 
+
+.veterinarians {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% ;
+    grid-gap: 5%;
+    margin: 3% 0 10% 5%;
+    // grid-template-rows: 20% 20%;
+    .veterinarian-card {
+        padding: 5%;
+        box-sizing: border-box;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        text-align: center;
+        .staff {
+            width: 17vw;
+            height: 40vh;
+        }
+        .veterinarian-name {
+            margin-top: 1em;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        .veterinarian-work {
+            font-weight: bold;
+            color: $green;
+            margin: 0.7em;
+        }
+    }
+}
+
+.veterinarian-card:hover {
+    background-color: $green;
+    color: #fff;
+    cursor: pointer;
+    .veterinarian-work {
+        color: #fff;
+    }
+}
+
+.pricing {
+    h2 {
+        text-align: center;
+        font-size: 3em;
+        margin: 3% 0;
+    }
+    .pricing-cards {
+        @include flex-content(space-evenly, center);
+        .pricing-card {
+            width: 30%;
+            @include flex-content(center, center);
+            flex-direction: column;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            padding: 2%;
+            box-sizing: border-box;
+            img {
+                width: 25vw;
+            }
+            .pricing-name {
+                text-transform: uppercase;
+                color: $green;
+                font-weight: bold;
+                margin-top: 5%;
+            }
+            .price {
+                .big-number {
+                    font-size: 4em;
+                }
+            }
+            ul {
+                li {
+                    list-style-image: url('../img/icons8-галочка.svg');
+                    margin-bottom: 20%;
+                    height: 5vh;
+                    width: 20vw;
+        
+                }
+
+                li:nth-child(2n) {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+            .pricing-btn {
+                width: 10vw;
+                height: 8vh;
+                background-color: $green;
+                border: none;
+                color: #fff;
+                text-transform: uppercase;
+                border-radius: 1em;
+                cursor: pointer;
+                // margin-bottom: 7%;
+            }
+        }
+    }
+}
+
+.all-form {
+    width: 94%;
+    height: 70vh;
+    margin: 3%;
+    background-image: linear-gradient(to right, #1A87E2, #05B56C);
+    display: flex;
+    img {
+        height: 70vh;
+    }
+    form {
+        @include flex-content(space-evenly, space-evenly);
+        flex-direction: column;
+        margin-left: 5vw;
+        h2 {
+            color: #fff;
+            font-size: 2em;
+        }
+        select, input, textarea {
+           border: 0;
+           outline: 0;
+           border-radius: 0.5em;
+        }
+        select, input {
+            height: 5vh;
+        }
+        .form-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 0.5em;
+            height: 5vh;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+
 @media screen and (min-width: 1435px) {
     .banner {
          background-size: cover;
