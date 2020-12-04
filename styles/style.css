@@ -95,7 +95,7 @@ a {
 }
 
 .banner {
-  background: url("/img/bg_1.jpg") no-repeat;
+  background: url("../img/bg_1.jpg") no-repeat;
   background-size: contain;
   width: 100%;
   height: 45rem;
