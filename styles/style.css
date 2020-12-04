@@ -11,8 +11,7 @@ a {
 }
 
 .contacts {
-  border: 1px solid red;
-  height: 2em;
+  height: 3em;
   background-image: -webkit-gradient(linear, left top, right top, from(#1A87E2), to(#05B56C));
   background-image: linear-gradient(to right, #1A87E2, #05B56C);
   color: #fff;
@@ -37,7 +36,6 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  border: 1px solid hotpink;
 }
 
 .communication .communication__item {
@@ -45,7 +43,6 @@ a {
 }
 
 .social-media {
-  border: 1px solid navy;
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,6 +560,28 @@ footer .footer-contacts .contacts-content img {
   cursor: pointer;
 }
 
+.gallery {
+  border: 1px solid green;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20%;
+      grid-template-columns: 20% 20% 20%;
+  -ms-grid-rows: 40% 40%;
+      grid-template-rows: 40% 40%;
+  grid-gap: 13%;
+  margin: 3% 0 5% 3%;
+  position: relative;
+}
+
+.gallery img {
+  width: 30vw;
+  height: 50vh;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+}
+
 @media screen and (min-width: 1435px) {
   .banner {
     background-size: cover;
@@ -616,6 +635,77 @@ footer .footer-contacts .contacts-content img {
   .navbar .navbar_item {
     margin: -3vh 0;
     text-align: center;
+  }
+}
+
+/* main__banner */
+/* banner__carousel */
+.banner__carousel {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* carousel-item */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6% ease;
+  transition: 0.6% ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.item-text {
+  color: #000;
+  background-color: #fff;
+  font-style: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.8s;
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .2;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

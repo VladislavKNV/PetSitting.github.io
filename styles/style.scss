@@ -19,8 +19,8 @@ a {
 }
 
 .contacts {
-    border: 1px solid red;
-    height: 2em;
+    //border: 1px solid red;
+    height: 3em;
     background-image: linear-gradient(to right, #1A87E2, #05B56C);
     color: #fff;
     @include flex-content(space-around, center);
@@ -31,11 +31,11 @@ a {
     }
     @include flex-content(space-evenly, center);
     width: 30%;
-    border: 1px solid hotpink;
+   // border: 1px solid hotpink;
 }
 
 .social-media {
-    border: 1px solid navy;
+   // border: 1px solid navy;
     width: 20%;
     @include flex-content(flex-end, center);
 }
@@ -374,6 +374,23 @@ footer {
     }
 }
 
+.gallery {
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 40% 40%;
+    grid-gap: 13%;
+    margin: 3% 0 5% 3%;
+    position: relative;
+    img {
+        width: 30vw;
+        height: 50vh;
+    }
+    img:hover {
+       opacity: 0.5;
+    }
+}
+
 
 @media screen and (min-width: 1435px) {
     .banner {
@@ -428,4 +445,65 @@ footer {
         }
     }
     
+}
+
+
+/* main__banner */
+/* banner__carousel */
+.banner__carousel{
+    max-width: 600px;
+    position: relative;
+    margin:auto;
+}
+/* carousel-item */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width:auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6% ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.item-text {
+    color: #000;
+    background-color: #fff;
+    font-style: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 15px;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing: 1.2px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration:0.8s;
+    animation-name: fade;
+    animation-duration: 0.8s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .2;}
+    to{opacity:1}
+}
+@keyframes fade{
+    from{opacity: .2;}
+    to{opacity: 1;}
 }
