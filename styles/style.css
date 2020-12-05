@@ -90,8 +90,8 @@ a {
 }
 
 .navigation-container .navbar .navbar_item:hover {
-  color: #06b174;
-  border-bottom: 1px solid #06b174;
+  color: #00BD56;
+  border-bottom: 1px solid #00BD56;
 }
 
 .banner {
@@ -126,7 +126,7 @@ a {
 .banner .main-btn {
   width: 10%;
   height: 5%;
-  background: #06b174;
+  background: #00BD56;
   text-transform: uppercase;
   color: #fff;
   font-weight: bold;
@@ -138,8 +138,8 @@ a {
 
 .banner .main-btn:hover {
   background-color: transparent;
-  color: #06b174;
-  border: 2px solid #06b174;
+  color: #00BD56;
+  border: 2px solid #00BD56;
 }
 
 .service-cards {
@@ -202,7 +202,7 @@ a {
 }
 
 .service-cards .service-cards__item:hover {
-  background: #06b174;
+  background: #00BD56;
   color: #fff;
 }
 
@@ -287,7 +287,9 @@ a {
 .about-us .grid-container .grid-item img {
   width: 5vw;
   height: 10vh;
-  border: 1px solid hotpink;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
+  background: #00BD56;
   border-radius: 50%;
   margin-right: 1rem;
 }
@@ -358,7 +360,7 @@ footer .footer-nav a {
 }
 
 footer .footer-nav a:hover {
-  border-bottom: 2px solid #06b174;
+  border-bottom: 2px solid #00BD56;
 }
 
 footer .footer-contacts .contacts-content {
@@ -410,12 +412,12 @@ footer .footer-contacts .contacts-content img {
 
 .veterinarians .veterinarian-card .veterinarian-work {
   font-weight: bold;
-  color: #06b174;
+  color: #00BD56;
   margin: 0.7em;
 }
 
 .veterinarian-card:hover {
-  background-color: #06b174;
+  background-color: #00BD56;
   color: #fff;
   cursor: pointer;
 }
@@ -470,7 +472,7 @@ footer .footer-contacts .contacts-content img {
 
 .pricing .pricing-cards .pricing-card .pricing-name {
   text-transform: uppercase;
-  color: #06b174;
+  color: #00BD56;
   font-weight: bold;
   margin-top: 5%;
 }
@@ -493,7 +495,7 @@ footer .footer-contacts .contacts-content img {
 .pricing .pricing-cards .pricing-card .pricing-btn {
   width: 10vw;
   height: 8vh;
-  background-color: #06b174;
+  background-color: #00BD56;
   border: none;
   color: #fff;
   text-transform: uppercase;
