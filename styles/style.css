@@ -563,7 +563,6 @@ footer .footer-contacts .contacts-content img {
 }
 
 .gallery {
-  border: 1px solid green;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 20% 20%;
@@ -582,6 +581,139 @@ footer .footer-contacts .contacts-content img {
 
 .gallery img:hover {
   opacity: 0.5;
+}
+
+.contacts-page p {
+  text-align: center;
+  margin: 3%;
+  font-size: 2em;
+}
+
+.contacts-page .contacts-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+}
+
+.contacts-page .contacts-icons .contacts-item {
+  height: 25vh;
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts-page .contacts-icons .contacts-item .img-contacts {
+  border-radius: 50%;
+  width: 5.6vw;
+  height: 11vh;
+  background-color: #00BD56;
+}
+
+.contacts-page .contacts-icons .contacts-item .address {
+  width: 70%;
+}
+
+.contacts-page .highlight {
+  color: #00BD56;
+}
+
+.contact-form {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+}
+
+.contact-form form h2 {
+  font-size: 2em;
+  margin-bottom: 3%;
+}
+
+.contact-form form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+}
+
+.contact-form form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: space-evenly;
+      -ms-flex-align: space-evenly;
+          align-items: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3%;
+  margin-right: 1vw;
+}
+
+.contact-form form .field input {
+  width: 20vw;
+  height: 5vh;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+}
+
+.contact-form form .field textarea {
+  outline: none;
+}
+
+.contact-form form .field #subject {
+  width: 100%;
+}
+
+.contact-form form label {
+  color: #00BD56;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.contact-form img {
+  width: 40%;
+  height: 85vh;
+}
+
+.map {
+  text-align: center;
+  margin: 6%;
 }
 
 @media screen and (min-width: 1435px) {
@@ -667,10 +799,6 @@ footer .footer-contacts .contacts-content img {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .item-text {
