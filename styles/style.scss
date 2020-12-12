@@ -516,6 +516,23 @@ footer {
         }
     }
 }
+    .veterinarians {
+        max-width: 88vw;
+        //border: 3px solid darkblue;
+        grid-template-columns: 30% 30% 30%;
+        .veterinarian-card {
+            //border: 1px solid blueviolet;
+            img.staff{
+                //border: 1px solid rgb(43, 226, 104);
+                width: 22vw;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 10vh;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -549,7 +566,20 @@ footer {
             margin-bottom: 3%;;
         }
     }
+
+    .gallery {
+        margin: auto;
+        max-width: 90vw;
+        //border: 1px solid red;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 20% 20% 20%;
+        .img-gallery {
+            width: 40vw;
+        }
+        margin-bottom: 10vh;
+    }
     footer {
+        margin-top: 15vh;
         .footer-item {
             //border: 1px solid red;
             height: 50vh;
@@ -569,10 +599,76 @@ footer {
     }
 }
 
-@media screen and (max-width: 500px) {
-    .communication .communication__item {
-        font-size: 0.7em;
+@media screen and (max-width: 550px) {
+    .navigation-container .navbar .navbar_item {
+       font-size: 0.6em;
+       margin: 0;
     }
+    .communication .communication__item {
+        font-size: 0.6em;
+    }
+    .banner {
+        max-width: 99vw;
+        height: 30vh;
+        background-size: cover;
+        .main-btn {
+            width: 25vw;
+            height: 4vh;
+        }
+    }
+    .service-cards {
+        max-width: 99vw;
+        position: relative;
+        top: 10em;
+        .service-cards__item {
+            height: 95vh;
+        }
+    }
+    .about-us {
+        border: 1px solid red;
+        margin-top: 30vh;
+        max-width: 99vw;
+        img {
+            width: 40vw;
+        }
+        .grid-container {
+            margin-top: 3em;
+            .grid-item {
+                img {
+                    width: 15vw;
+                }
+                .item-title {
+                    font-size: 1em !important; 
+                }
+                .item-txt {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+    .veterinarians {
+        grid-template-columns: 45% 45%;
+        .veterinarian-card {
+            img.staff{
+                width: 35vw;
+            }
+        }
+    }
+
+    .gallery {
+        grid-template-columns: 90%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        grid-gap: 0;
+        margin: 0 10vw;
+        // height: 500vh;
+        //border: 3px solid rebeccapurple;
+        .img-gallery {
+            //border: 3px solid palevioletred;
+            width: 110%;
+        }
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -604,47 +700,31 @@ footer {
     }
     .banner {
         height: 35vh;
-        max-width: 99vw;
+        background-size: contain;
         .banner__title {
             font-size: 1em;
         }
         .main-btn {
-            width: 25vw;
-            height: 4vh;
             .learn {
                 font-size: 0.6em;;
             }
         }
     }
     .service-cards {
-        max-width: 99vw;
-        position: relative;
         top: 7em;
-        .service-cards__item {
-            height: 95vh;
-        }
     }
 
     .about-us {
-        //border: 1px solid green;
-        margin-top: 30vh;
         max-width: 99vw;
         flex-direction: column-reverse;
         img {
             width: 70vw;
         }
         .grid-container {
-            margin-top: 3em;
             width: 100%;
             .grid-item {
                 img {
                     width: 20vw;
-                }
-                .item-title {
-                    font-size: 1em !important; 
-                }
-                .item-txt {
-                    font-size: 0.8em;
                 }
             }
         }
@@ -657,6 +737,16 @@ footer {
         }
         .footer-text {
             font-size: 0.7em;
+        }
+    }
+
+    .veterinarians {
+        grid-template-columns: 100%;
+        .veterinarian-card {
+            img.staff{
+                width: 55vw;
+                height: 50vh;
+            }
         }
     }
 }

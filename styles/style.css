@@ -769,6 +769,17 @@ footer .footer-contacts .contacts-content img {
   .about-us .grid-container .grid-item img {
     width: 7vw;
   }
+  .veterinarians {
+    max-width: 88vw;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+  }
+  .veterinarians .veterinarian-card img.staff {
+    width: 22vw;
+  }
+  footer {
+    margin-top: 10vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -805,6 +816,21 @@ footer .footer-contacts .contacts-content img {
     height: 55vh;
     margin-bottom: 3%;
   }
+  .gallery {
+    margin: auto;
+    max-width: 90vw;
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    -ms-grid-rows: 20% 20% 20%;
+        grid-template-rows: 20% 20% 20%;
+    margin-bottom: 10vh;
+  }
+  .gallery .img-gallery {
+    width: 40vw;
+  }
+  footer {
+    margin-top: 15vh;
+  }
   footer .footer-item {
     height: 50vh;
     text-align: center;
@@ -836,9 +862,68 @@ footer .footer-contacts .contacts-content img {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+  .navigation-container .navbar .navbar_item {
+    font-size: 0.6em;
+    margin: 0;
+  }
   .communication .communication__item {
-    font-size: 0.7em;
+    font-size: 0.6em;
+  }
+  .banner {
+    max-width: 99vw;
+    height: 30vh;
+    background-size: cover;
+  }
+  .banner .main-btn {
+    width: 25vw;
+    height: 4vh;
+  }
+  .service-cards {
+    max-width: 99vw;
+    position: relative;
+    top: 10em;
+  }
+  .service-cards .service-cards__item {
+    height: 95vh;
+  }
+  .about-us {
+    border: 1px solid red;
+    margin-top: 30vh;
+    max-width: 99vw;
+  }
+  .about-us img {
+    width: 40vw;
+  }
+  .about-us .grid-container {
+    margin-top: 3em;
+  }
+  .about-us .grid-container .grid-item img {
+    width: 15vw;
+  }
+  .about-us .grid-container .grid-item .item-title {
+    font-size: 1em !important;
+  }
+  .about-us .grid-container .grid-item .item-txt {
+    font-size: 0.8em;
+  }
+  .veterinarians {
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+  }
+  .veterinarians .veterinarian-card img.staff {
+    width: 35vw;
+  }
+  .gallery {
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+    -ms-grid-rows: 16% 16% 16% 16% 16% 16%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    grid-gap: 0;
+    margin: 0 10vw;
+  }
+  .gallery .img-gallery {
+    width: 110%;
   }
 }
 
@@ -875,28 +960,18 @@ footer .footer-contacts .contacts-content img {
   }
   .banner {
     height: 35vh;
-    max-width: 99vw;
+    background-size: contain;
   }
   .banner .banner__title {
     font-size: 1em;
-  }
-  .banner .main-btn {
-    width: 25vw;
-    height: 4vh;
   }
   .banner .main-btn .learn {
     font-size: 0.6em;
   }
   .service-cards {
-    max-width: 99vw;
-    position: relative;
     top: 7em;
   }
-  .service-cards .service-cards__item {
-    height: 95vh;
-  }
   .about-us {
-    margin-top: 30vh;
     max-width: 99vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -907,17 +982,10 @@ footer .footer-contacts .contacts-content img {
     width: 70vw;
   }
   .about-us .grid-container {
-    margin-top: 3em;
     width: 100%;
   }
   .about-us .grid-container .grid-item img {
     width: 20vw;
-  }
-  .about-us .grid-container .grid-item .item-title {
-    font-size: 1em !important;
-  }
-  .about-us .grid-container .grid-item .item-txt {
-    font-size: 0.8em;
   }
   .footer-item {
     display: -webkit-box;
@@ -935,6 +1003,14 @@ footer .footer-contacts .contacts-content img {
   }
   .footer-item .footer-text {
     font-size: 0.7em;
+  }
+  .veterinarians {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .veterinarians .veterinarian-card img.staff {
+    width: 55vw;
+    height: 50vh;
   }
 }
 
