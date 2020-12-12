@@ -86,18 +86,22 @@ a {
         width: 10%;
         height: 5%;
         background: $green;
-        text-transform: uppercase;
-        color: #fff;
-        font-weight: bold;
-        font-size: 0.75rem;
         border: none;
         border-radius: 3%;
         cursor: pointer;
+        .learn {
+         color: #fff;
+         font-size: 0.75rem;
+         text-transform: uppercase;
+         font-weight: bold;
+        }
     }
     .main-btn:hover {
         background-color: transparent;
-        color: $green;
         border: 2px solid $green;
+        .learn {
+            color: $green;
+        }
     }
 }
 
@@ -117,6 +121,7 @@ a {
     }
     .service-cards__item {
         width: 25%;
+        height: 60vh;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         text-align: center;
         padding: 2rem;
@@ -152,16 +157,16 @@ a {
         font-size: 2rem;
         font-weight: 800;
         margin-bottom: 1rem;
-        margin-top: 3vh;
+        margin-top: 7vh;
     }
 
     .grid-container {
-        //border: 1px solid darkblue;
+        // border: 1px solid darkblue;
         width: 50vw;
         display: grid;
         grid-template-columns: 50% 50%;
         .grid-item {
-            width: 25vw;
+            //width: 25vw;
             //border: 1px solid darkcyan;
             @include flex-content(space-between, center);
             .item-content {
@@ -192,7 +197,6 @@ a {
             }
         }
     }
-
 }
 
 footer {
@@ -220,7 +224,7 @@ footer {
     }
 
     .footer-nav {
-        @include flex-content(center, center);
+        @include flex-content(space-evenly, center);
         a {
             color: #fff;
             margin-bottom: 0.5rem;
@@ -494,17 +498,80 @@ footer {
          height: 7%;
         }
    }
+
+   .about-us {
+    .grid-container {
+        //border: 3px solid darkblue;
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 100%;
+        .grid-item {
+            @include flex-content(space-evenly, space-evenly);
+            margin-bottom: 5vh;
+            img {
+                width: 7vw;
+            }
+        }
+    }
+}
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        .contacts {
+            @include flex-content(space-evenly, center);
+        }
+    }
+    .navigation-container {
+        nav {
+            border: 1px solid red;
+            a {
+                font-size: 0.5em;
+                border: 1px solid green;
+            }
+        }
+    }
     .banner {
         .banner__title {
             font-size: 3vh;
         }
     }
+    .service-cards {
+        .service-cards__label {
+            position: static;
+        }
+        margin-top: -20vh;
+        border: 2px solid red;
+        flex-direction: column;
+        width: 100%;
+        .service-cards__item {
+            width: 60%;
+            height: 55vh;
+            margin-bottom: 3%;;
+        }
+    }
+    footer {
+        .footer-item {
+            border: 1px solid red;
+            height: 50vh;
+            .footer-links__icons {
+                border: 1px solid green;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .footer-contacts {
+            .contacts-content { 
+                @include flex-content(flex-start, center);
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 425px) {
+    
     .communication {
         display: none;
     }
