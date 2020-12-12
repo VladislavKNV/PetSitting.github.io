@@ -82,7 +82,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 5rem;
   line-height: 5rem;
   margin-right: 1rem;
   color: #000;
@@ -318,15 +317,16 @@ footer {
 footer .footer-item {
   width: 25vw;
   height: 35vh;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -783,19 +783,14 @@ footer .footer-contacts .contacts-content img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .navigation-container nav {
-    border: 1px solid red;
-  }
   .navigation-container nav a {
     font-size: 0.5em;
-    border: 1px solid green;
   }
   .banner .banner__title {
     font-size: 3vh;
   }
   .service-cards {
     margin-top: -20vh;
-    border: 2px solid red;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -811,11 +806,10 @@ footer .footer-contacts .contacts-content img {
     margin-bottom: 3%;
   }
   footer .footer-item {
-    border: 1px solid red;
     height: 50vh;
+    text-align: center;
   }
   footer .footer-item .footer-links__icons {
-    border: 1px solid green;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -842,6 +836,12 @@ footer .footer-contacts .contacts-content img {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .communication .communication__item {
+    font-size: 0.7em;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .communication {
     display: none;
@@ -861,12 +861,80 @@ footer .footer-contacts .contacts-content img {
     background-image: -webkit-gradient(linear, left top, right top, from(#1A87E2), to(#05B56C));
     background-image: linear-gradient(to right, #1A87E2, #05B56C);
     margin-top: 30vh;
-    width: 60%;
+    width: 50%;
     border-radius: 5%;
+    position: relative;
   }
   .navbar .navbar_item {
     margin: -3vh 0;
     text-align: center;
+    font-size: 1em;
+  }
+  .navigation-container .navbar .navbar_item {
+    color: #fff;
+  }
+  .banner {
+    height: 35vh;
+    max-width: 99vw;
+  }
+  .banner .banner__title {
+    font-size: 1em;
+  }
+  .banner .main-btn {
+    width: 25vw;
+    height: 4vh;
+  }
+  .banner .main-btn .learn {
+    font-size: 0.6em;
+  }
+  .service-cards {
+    max-width: 99vw;
+    position: relative;
+    top: 7em;
+  }
+  .service-cards .service-cards__item {
+    height: 95vh;
+  }
+  .about-us {
+    margin-top: 30vh;
+    max-width: 99vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-us img {
+    width: 70vw;
+  }
+  .about-us .grid-container {
+    margin-top: 3em;
+    width: 100%;
+  }
+  .about-us .grid-container .grid-item img {
+    width: 20vw;
+  }
+  .about-us .grid-container .grid-item .item-title {
+    font-size: 1em !important;
+  }
+  .about-us .grid-container .grid-item .item-txt {
+    font-size: 0.8em;
+  }
+  .footer-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-item .footer-links__title {
+    font-size: 1em;
+  }
+  .footer-item .footer-text {
+    font-size: 0.7em;
   }
 }
 

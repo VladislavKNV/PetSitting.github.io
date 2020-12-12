@@ -52,9 +52,10 @@ a {
     }
     .navbar {
         .navbar_item {
+           // border: 2px solid blue;
             display: inline-block;
             align-items: center;
-            height: 5rem;
+            //height: 5rem;
             line-height: 5rem;
             margin-right: 1rem;
             color: #000;
@@ -207,7 +208,8 @@ footer {
     .footer-item {
         width: 25vw;
         height: 35vh;
-        @include flex-content(space-evenly, space-between);
+        text-align: center;
+        @include flex-content(center, flex-start);
         flex-direction: column;
     }
     .footer-links__title {
@@ -524,10 +526,8 @@ footer {
     }
     .navigation-container {
         nav {
-            border: 1px solid red;
             a {
                 font-size: 0.5em;
-                border: 1px solid green;
             }
         }
     }
@@ -541,7 +541,6 @@ footer {
             position: static;
         }
         margin-top: -20vh;
-        border: 2px solid red;
         flex-direction: column;
         width: 100%;
         .service-cards__item {
@@ -552,10 +551,10 @@ footer {
     }
     footer {
         .footer-item {
-            border: 1px solid red;
+            //border: 1px solid red;
             height: 50vh;
+            text-align: center;
             .footer-links__icons {
-                border: 1px solid green;
                 display: flex;
                 flex-direction: column;
             }
@@ -570,8 +569,13 @@ footer {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .communication .communication__item {
+        font-size: 0.7em;
+    }
+}
+
 @media screen and (max-width: 425px) {
-    
     .communication {
         display: none;
     }
@@ -586,14 +590,75 @@ footer {
         display: none;
         background-image: linear-gradient(to right, #1A87E2, #05B56C);
         margin-top: 30vh;
-        width: 60%;
+        width: 50%;
         border-radius: 5%;
+        position: relative;
         .navbar_item {
             margin: -3vh 0;
             text-align: center;
+            font-size: 1em;
         }
     }
-    
+    .navigation-container .navbar .navbar_item {
+        color: #fff;
+    }
+    .banner {
+        height: 35vh;
+        max-width: 99vw;
+        .banner__title {
+            font-size: 1em;
+        }
+        .main-btn {
+            width: 25vw;
+            height: 4vh;
+            .learn {
+                font-size: 0.6em;;
+            }
+        }
+    }
+    .service-cards {
+        max-width: 99vw;
+        position: relative;
+        top: 7em;
+        .service-cards__item {
+            height: 95vh;
+        }
+    }
+
+    .about-us {
+        //border: 1px solid green;
+        margin-top: 30vh;
+        max-width: 99vw;
+        flex-direction: column-reverse;
+        img {
+            width: 70vw;
+        }
+        .grid-container {
+            margin-top: 3em;
+            width: 100%;
+            .grid-item {
+                img {
+                    width: 20vw;
+                }
+                .item-title {
+                    font-size: 1em !important; 
+                }
+                .item-txt {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    .footer-item {
+        //border: 1px solid green;
+        @include flex-content(flex-start, flex-start);
+        .footer-links__title {
+            font-size: 1em;
+        }
+        .footer-text {
+            font-size: 0.7em;
+        }
+    }
 }
 
 

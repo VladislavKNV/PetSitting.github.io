@@ -4,21 +4,13 @@ const menuContainer = document.getElementById("navbar");
 menuIcon.addEventListener("click", () => {
     menuContainer.classList.toggle("open");
     menuContainer.style.display="flex";
+    menuIcon.style.width="20px";
 
     if(!menuContainer.classList.contains("open")) {
         menuContainer.style.display="none";
+        menuIcon.style.width="50px";
     }
 });
-
-// let containerImg = document.getElementById("gallery");
-// containerImg.addEventListener('click', e => {
-//     e.stopPropagation();
-//     e.target.style.width = '100vw';
-//     e.target.style.height = '150vh';
-//     e.target.style.position = 'relative';
-//     e.target.style.zindex = 2;
-//     e.target.style.opacity = '1';
-// });
 
 
 let slideIndex = 1;
