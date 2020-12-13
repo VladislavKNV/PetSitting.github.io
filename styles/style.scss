@@ -729,6 +729,10 @@ footer {
             }
         }
     }
+    footer {
+        margin-top: 220vh;
+    }
+
     .footer-item {
         //border: 1px solid green;
         @include flex-content(flex-start, flex-start);

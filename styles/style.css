@@ -987,6 +987,9 @@ footer .footer-contacts .contacts-content img {
   .about-us .grid-container .grid-item img {
     width: 20vw;
   }
+  footer {
+    margin-top: 220vh;
+  }
   .footer-item {
     display: -webkit-box;
     display: -ms-flexbox;
