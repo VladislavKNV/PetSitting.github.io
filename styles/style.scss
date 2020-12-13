@@ -17,6 +17,9 @@ $green: #00BD56;
 a {
     text-decoration: none;
 }
+body {
+    margin: auto;
+}
 
 .contacts {
    // border: 1px solid red;
@@ -529,10 +532,30 @@ footer {
         }
     }
 
-    footer {
-        margin-top: 10vh;
+    .pricing {
+        border: 2px solid green;
+        .pricing-cards {
+
+        }
     }
-    
+    body {
+        border: 2px solid red;
+        max-width: 150vw;
+    }
+    .all-form {
+        img {
+            width: 40vw;
+            height: 50vh;
+            margin: auto;
+        }
+    }
+
+    .map {
+        img {
+            width: 80vw;
+        }
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -577,6 +600,23 @@ footer {
             width: 40vw;
         }
         margin-bottom: 10vh;
+    }
+    .contact-form {
+        flex-direction: column;
+        img {
+            height: 50vh;
+        }
+    }
+    .contacts-icons {
+        border: 1px solid rebeccapurple;
+        flex-direction: column;
+        align-items: center;
+        .contacts-item {
+            width: 80%;
+        }
+    }
+    .contacts-page .contacts-icons .contacts-item .img-contacts {
+        width: 20vw;
     }
     footer {
         margin-top: 15vh;
@@ -661,12 +701,31 @@ footer {
         grid-template-rows: 16% 16% 16% 16% 16% 16%;
         grid-gap: 0;
         margin: 0 10vw;
-        // height: 500vh;
-        //border: 3px solid rebeccapurple;
         .img-gallery {
-            //border: 3px solid palevioletred;
             width: 110%;
         }
+    }
+
+    .all-form {
+        flex-direction: column;
+        margin-bottom: 10vh;
+        img {
+            width: 60vw;
+            height: 50vh;
+            margin:auto;
+        }
+        form {
+            background-image: linear-gradient(to right, #1A87E2, #05B56C);
+            margin-left: 0;
+            width: 70%;
+            margin:auto;
+            margin-top: 5vh;
+            border: 2px solid khaki;
+
+        }
+    }
+    footer {
+        margin-top: 50vh;
     }
 
 }
@@ -729,9 +788,18 @@ footer {
             }
         }
     }
-    footer {
-        margin-top: 220vh;
+    .pricing {
+        .pricing-cards {
+            flex-direction: column;
+            .pricing-card {
+                width: 70%;
+            }
+        }
+        margin-bottom: 20vh;
     }
+    // footer {
+    //     margin-top: 220vh;
+    // }
 
     .footer-item {
         //border: 1px solid green;
@@ -757,7 +825,7 @@ footer {
 
 @media screen and (max-width: 320px) {
     body {
-        max-width: 98%;
+        max-width: 100%;
         //border: 1px solid red;
     }
     .veterinarians .veterinarian-card  {
@@ -768,8 +836,25 @@ footer {
     .navbar {
         margin-top: 60vh;
     }
+    // footer {
+    //     margin-top: 180vh;
+    // }
     footer {
-        margin-top: 180vh;
+        margin-top: 0;
+    }
+
+    .pricing {
+        h2 {
+            font-size: 2em;
+        }
+    }
+
+    .all-form {
+        img {
+            width: 70vw;
+            height: 40vh;
+        }
+        margin-bottom: 10vh;
     }
 }
 
