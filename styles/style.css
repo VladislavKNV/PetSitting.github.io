@@ -1014,6 +1014,21 @@ footer .footer-contacts .contacts-content img {
   }
 }
 
+@media screen and (max-width: 320px) {
+  body {
+    max-width: 98%;
+  }
+  .veterinarians .veterinarian-card img {
+    height: 35vh !important;
+  }
+  .navbar {
+    margin-top: 60vh;
+  }
+  footer {
+    margin-top: 180vh;
+  }
+}
+
 /* main__banner */
 /* banner__carousel */
 .banner__carousel {

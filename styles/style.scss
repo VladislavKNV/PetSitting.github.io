@@ -19,7 +19,7 @@ a {
 }
 
 .contacts {
-    //border: 1px solid red;
+   // border: 1px solid red;
     height: 3em;
     background-image: linear-gradient(to right, #1A87E2, #05B56C);
     color: #fff;
@@ -748,6 +748,24 @@ footer {
                 height: 50vh;
             }
         }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        max-width: 98%;
+        //border: 1px solid red;
+    }
+    .veterinarians .veterinarian-card  {
+        img {
+            height: 35vh !important;
+        }
+    }
+    .navbar {
+        margin-top: 60vh;
+    }
+    footer {
+        margin-top: 180vh;
     }
 }
 
