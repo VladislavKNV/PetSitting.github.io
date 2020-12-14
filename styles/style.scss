@@ -744,10 +744,11 @@ footer {
         flex-direction: column;
         display: none;
         background-image: linear-gradient(to right, #1A87E2, #05B56C);
-        margin-top: 30vh;
+        margin-top: 50vh;
         width: 50%;
         border-radius: 5%;
         position: relative;
+        z-index: 2;
         .navbar_item {
             margin: -3vh 0;
             text-align: center;
@@ -769,8 +770,13 @@ footer {
             }
         }
     }
-    .service-cards {
-        top: 7em;
+    .service-cards .service-cards__item {
+        height: 60vh;
+        width: 80vw;
+        margin-bottom: 5vh;
+    }
+    .service-cards .service-cards__item:first-child {
+        margin-top: -7vh;
     }
 
     .about-us {
@@ -783,70 +789,51 @@ footer {
             width: 100%;
             .grid-item {
                 img {
-                    width: 20vw;
+                    width: 22vw;
                 }
             }
         }
     }
-    .pricing {
-        .pricing-cards {
-            flex-direction: column;
-            .pricing-card {
-                width: 70%;
-            }
-        }
-        margin-bottom: 20vh;
-    }
-    // footer {
-    //     margin-top: 220vh;
-    // }
-
-    .footer-item {
-        //border: 1px solid green;
-        @include flex-content(flex-start, flex-start);
-        .footer-links__title {
-            font-size: 1em;
-        }
-        .footer-text {
-            font-size: 0.7em;
-        }
-    }
-
     .veterinarians {
         grid-template-columns: 100%;
+        grid-gap: 2%;
         .veterinarian-card {
             img.staff{
-                width: 55vw;
-                height: 50vh;
+                width: 70vw;
+                height: 40vh;
             }
         }
-    }
-}
-
-@media screen and (max-width: 320px) {
-    body {
-        max-width: 100%;
-        //border: 1px solid red;
-    }
-    .veterinarians .veterinarian-card  {
-        img {
-            height: 35vh !important;
+        .veterinarian-card:last-child {
+            margin-bottom: 90vh;
         }
     }
-    .navbar {
-        margin-top: 60vh;
+    img.img-gallery {
+        height: 30vh;
     }
-    // footer {
-    //     margin-top: 180vh;
-    // }
-    footer {
-        margin-top: 0;
-    }
-
     .pricing {
         h2 {
             font-size: 2em;
         }
+        .pricing-cards {
+            flex-direction: column;
+            .pricing-card {
+                margin-bottom: 5vh;
+                border: 2px solid lightcoral;
+                width: 70%;
+                img {
+                    width: 40vw;
+                    height: 15vh;
+                }
+                .price .big-number {
+                    font-size: 2em;
+                }
+                .pricing-btn {
+                    width: 30vw;
+                    margin: 2em 0;
+                }
+            }
+        }
+        margin-bottom: 20vh;
     }
 
     .all-form {
@@ -854,7 +841,46 @@ footer {
             width: 70vw;
             height: 40vh;
         }
-        margin-bottom: 10vh;
+        margin-top: -10vh;
+        margin-bottom: 50vh;
+    }
+
+    .contacts-page .contacts-icons .contacts-item {
+        .address {
+            width: 50vw;
+        }
+
+        .img-contacts {
+           width: 25vw;
+       }
+    }
+    .contact-form img {
+        height: 30vh;
+        width: 50vw;
+    }
+
+    footer {
+        border: 2px solid green;
+        margin-top: 0;
+         #footer-email, .address #footer-address {
+            border: 2px solid lightcoral;
+            font-size: 0.68em;
+        }
+    }
+    footer .footer-contacts .contacts-content .address{
+        border: 2px solid darkblue;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        max-width: 100%;
+    }
+    footer {
+        .nav-title, .footer-links__title {
+            font-size: 1.2em;
+        }
     }
 }
 

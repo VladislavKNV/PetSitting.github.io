@@ -1010,10 +1010,11 @@ footer .footer-contacts .contacts-content img {
     display: none;
     background-image: -webkit-gradient(linear, left top, right top, from(#1A87E2), to(#05B56C));
     background-image: linear-gradient(to right, #1A87E2, #05B56C);
-    margin-top: 30vh;
+    margin-top: 50vh;
     width: 50%;
     border-radius: 5%;
     position: relative;
+    z-index: 2;
   }
   .navbar .navbar_item {
     margin: -3vh 0;
@@ -1033,8 +1034,13 @@ footer .footer-contacts .contacts-content img {
   .banner .main-btn .learn {
     font-size: 0.6em;
   }
-  .service-cards {
-    top: 7em;
+  .service-cards .service-cards__item {
+    height: 60vh;
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+  .service-cards .service-cards__item:first-child {
+    margin-top: -7vh;
   }
   .about-us {
     max-width: 99vw;
@@ -1050,10 +1056,28 @@ footer .footer-contacts .contacts-content img {
     width: 100%;
   }
   .about-us .grid-container .grid-item img {
-    width: 20vw;
+    width: 22vw;
+  }
+  .veterinarians {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-gap: 2%;
+  }
+  .veterinarians .veterinarian-card img.staff {
+    width: 70vw;
+    height: 40vh;
+  }
+  .veterinarians .veterinarian-card:last-child {
+    margin-bottom: 90vh;
+  }
+  img.img-gallery {
+    height: 30vh;
   }
   .pricing {
     margin-bottom: 20vh;
+  }
+  .pricing h2 {
+    font-size: 2em;
   }
   .pricing .pricing-cards {
     -webkit-box-orient: vertical;
@@ -1062,32 +1086,50 @@ footer .footer-contacts .contacts-content img {
             flex-direction: column;
   }
   .pricing .pricing-cards .pricing-card {
+    margin-bottom: 5vh;
+    border: 2px solid lightcoral;
     width: 70%;
   }
-  .footer-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  .pricing .pricing-cards .pricing-card img {
+    width: 40vw;
+    height: 15vh;
   }
-  .footer-item .footer-links__title {
-    font-size: 1em;
+  .pricing .pricing-cards .pricing-card .price .big-number {
+    font-size: 2em;
   }
-  .footer-item .footer-text {
+  .pricing .pricing-cards .pricing-card .pricing-btn {
+    width: 30vw;
+    margin: 2em 0;
+  }
+  .all-form {
+    margin-top: -10vh;
+    margin-bottom: 50vh;
+  }
+  .all-form img {
+    width: 70vw;
+    height: 40vh;
+  }
+  .contacts-page .contacts-icons .contacts-item .address {
+    width: 50vw;
+  }
+  .contacts-page .contacts-icons .contacts-item .img-contacts {
+    width: 25vw;
+  }
+  .contact-form img {
+    height: 30vh;
+    width: 50vw;
+  }
+  footer {
+    border: 2px solid green;
+    margin-top: 0;
+  }
+  footer #footer-email, footer .address #footer-address {
+    border: 2px solid lightcoral;
+    font-size: 0.68em;
+  }
+  footer .footer-contacts .contacts-content .address {
+    border: 2px solid darkblue;
     font-size: 0.7em;
-  }
-  .veterinarians {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-  .veterinarians .veterinarian-card img.staff {
-    width: 55vw;
-    height: 50vh;
   }
 }
 
@@ -1095,24 +1137,8 @@ footer .footer-contacts .contacts-content img {
   body {
     max-width: 100%;
   }
-  .veterinarians .veterinarian-card img {
-    height: 35vh !important;
-  }
-  .navbar {
-    margin-top: 60vh;
-  }
-  footer {
-    margin-top: 0;
-  }
-  .pricing h2 {
-    font-size: 2em;
-  }
-  .all-form {
-    margin-bottom: 10vh;
-  }
-  .all-form img {
-    width: 70vw;
-    height: 40vh;
+  footer .nav-title, footer .footer-links__title {
+    font-size: 1.2em;
   }
 }
 
