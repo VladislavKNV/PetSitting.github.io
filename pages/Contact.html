@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <title>Contact</title>
    
 </head>
@@ -11,8 +13,8 @@
     <header>
         <div class="contacts">
             <div class="communication">
-                <div class="communication__item">+375292523250</div>
-                <div class="communication__item">vladislav04082001@mail.ru</div>
+                <div class="communication__item">+1 816 606 2331</div>
+                <div class="communication__item">infoPet@gmail.com</div>
             </div>
             <div class="social-media">
                 <a href="https://www.facebook.com/">
@@ -45,23 +47,23 @@
     </div>
   
     <div class="contacts-page">
-        <p>Contacts</p>
+        <p class="contacts-header">Contact Information</p>
         <div class="contacts-icons">
             <div class="contacts-item">
                 <img src="../img/maps-and-flags.svg" alt="maps-and-flags" class="img-contacts">
-                <div class="address">Address: <span class="highlight">Prospekt Rokossovskogo, dom 49, Minsk, Belarus</span></div>
+                <div class="address">Address: <span class="highlight">22 Chedworth Rd</span></div>
             </div>
             <div class="contacts-item">
                 <img src="../img/paper-plane.svg" alt="paper-plane" class="img-contacts">
-                <div class="email">Email: <span class="highlight"> infoPet@gmail.com</span></div>
+                <div class="email">Email: <span class="highlight">infoPet@gmail.com</span></div>
             </div>
             <div class="contacts-item">
                 <img src="../img/phone-call.svg" alt="phone-call" class="img-contacts">
-                <div class="phone">Phone: <span class="highlight">+375 (29) 252 32 50</span></div>
+                <div class="phone">Phone: <span class="highlight">+1 816 606 2331</span></div>
             </div>
             <div class="contacts-item">
                 <img src="../img/earth.svg" alt="earth" class="img-contacts">
-                <div class="site">Website: <span class="highlight">yoursite.com</span></div>
+                <div class="site">Website: <span class="highlight">site.com</span></div>
             </div>
         </div>
     </div>
@@ -71,29 +73,38 @@
             <h2>Contact Us</h2>
             <div class="row">
                 <div class="field">
-                    <label for="name">full name</label>
-                    <input type="text" id="name" placeholder="Name">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
                 </div>
                 <div class="field">
-                    <label for="email">email</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email">
                 </div>
             </div>
             <div class="field">
-                <label for="subject">subject</label>
+                <label for="subject">Subject</label>
                 <input type="text" id="subject" placeholder="Subject">
             </div>
             <div class="field">
-                <label for="message">message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             </div>
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
         <img src="../img/img.jpg" alt="dog">
     </div>
 
-    <div class="map">
-        <img src="../img/map.jpg" alt="map">
-    </div>
+    <div class="map" id="map"></div>
+    <script>
+        var map = L.map('map').setView([40.99051402312176, -73.82002577512723], 13); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        L.marker([40.99051402312176, -73.82002577512723]).addTo(map)  
+          .bindPopup('22 Chedworth Rd, Scarsdale, NY 10583, USA')
+          .openPopup();
+      </script>
+
 
     <footer>
         <div class="footer-item footer-links">
@@ -127,13 +138,13 @@
             <div class="contacts-content">
                 <img src="../img/icons8-map.png" alt="map-icon">
                 <div class="address">
-                    Prospekt Rokossovskogo, dom 49, Minsk, Belarus
+                    22 Chedworth Rd, Scarsdale, NY 10583
                 </div>
             </div>
             <div class="contacts-content">
                 <img src="../img/icons8-phone.png" alt="phone-icon">
                 <div class="phone">
-                    +375 (29) 252 32 50
+                    +1 816 606 2331
                 </div>
             </div>
             <div class="contacts-content">
